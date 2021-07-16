@@ -114,13 +114,13 @@ public final class OpenSsl {
                         "See http://netty.io/wiki/forked-tomcat-native.html for more information.", t);
             }
         }
-
+        /*
         if (cause == null && !isNettyTcnative()) {
             logger.debug("incompatible tcnative in the classpath; "
                     + OpenSslEngine.class.getSimpleName() + " will be unavailable.");
             cause = new ClassNotFoundException("incompatible tcnative in the classpath");
         }
-
+        */
         UNAVAILABILITY_CAUSE = cause;
 
         if (cause == null) {
